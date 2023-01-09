@@ -24,7 +24,7 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
 
     - name: Set up JDK
-      uses: actions/setup-java@19eeec562b37d29a1ad055b7de9c280bd0906d8d
+      uses: actions/setup-java@285fb318c51dae7a9ebfe0043800b786c3839a03
       with:
         java-version: ${{ matrix.java }}
         distribution: 'zulu'
